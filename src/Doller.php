@@ -26,11 +26,10 @@ final class Doller
 
     /**
      * @param int $multiplier
-     * @return null
+     * @return Doller
      */
-    public function times(int $multiplier)
+    public function times(int $multiplier):Doller
     {
-        $this->amount *= $multiplier;
-        return null;
+        return new Doller($this->amount * $multiplier);
     }
 }
