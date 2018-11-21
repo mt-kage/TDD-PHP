@@ -10,4 +10,12 @@ namespace Tdd;
 class Doller
 {
 
+    /**
+     * Doller constructor.
+     * @param int $amount
+     */
+    public function __construct(int $amount)
+    {
+    }
+
 }
