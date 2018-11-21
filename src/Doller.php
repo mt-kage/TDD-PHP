@@ -7,7 +7,7 @@ namespace Tdd;
  * Class Doller
  * @package Tdd
  */
-class Doller
+final class Doller
 {
 
     /**
