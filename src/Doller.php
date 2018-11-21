@@ -11,6 +11,11 @@ class Doller
 {
 
     /**
+     * @var int
+     */
+    public $amount;
+
+    /**
      * Doller constructor.
      * @param int $amount
      */
