@@ -43,5 +43,6 @@ final class MoneyTest extends CommonTestCase
     public function testEquality():void
     {
         $this->assertTrue((new Doller(5))->equals(new Doller(5)));
+        $this->assertFalse((new Doller(5))->equals(new Doller(6)));
     }
 }
