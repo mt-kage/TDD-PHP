@@ -29,6 +29,6 @@ final class Doller
      */
     public function times(int $multiplier):void
     {
-        $this->amount = $this->amount * $multiplier;
+        $this->amount *= $multiplier;
     }
 }
