@@ -21,21 +21,21 @@ abstract class CommonTestCase extends \PHPUnit\Framework\TestCase
     /**
      *
      */
-    protected function setUp()
+    protected function setUp():void
     {
     }
 
     /**
      *
      */
-    protected function tearDown()
+    protected function tearDown():void
     {
     }
 
     /**
-     * @param null $message
+     * @param string $message
      */
-    protected function verify($message = null)
+    protected function verify(string $message = ""):void
     {
         $this->assertEquals($this->expected, $this->actual, $message);
     }
