@@ -7,7 +7,7 @@ namespace Tdd;
  * Class MoneyTest
  * @package Tdd
  */
-class MoneyTest extends CommonTestCase
+final class MoneyTest extends CommonTestCase
 {
     /**
      *
