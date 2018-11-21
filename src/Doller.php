@@ -32,4 +32,16 @@ final class Doller
     {
         return new Doller($this->amount * $multiplier);
     }
+
+    /**
+     * @param object $object
+     * @return bool
+     */
+    public function equals(object $object):bool
+    {
+        // 実際のコードはDollerにキャストしている。
+        // Doller doller = (Doller) object;
+        $doller = $object;
+        return $this->amount == $doller->amount;
+    }
 }

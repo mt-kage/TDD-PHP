@@ -36,4 +36,13 @@ final class MoneyTest extends CommonTestCase
         $product = $five->times(3);
         $this->assertEquals(15, $product->amount);
     }
+
+    /**
+     *
+     */
+    public function testEquality():void
+    {
+        $this->assertTrue((new Doller(5))->equals(new Doller(5)));
+        $this->assertFalse((new Doller(5))->equals(new Doller(6)));
+    }
 }
