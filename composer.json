@@ -1,0 +1,38 @@
+{
+    "name": "mt-kage/tdd-php",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Yusuke Kageyama",
+            "email": "developer@mt-kage.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Tdd\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tdd\\": "tests/"
+        }
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "squizlabs/php_codesniffer": "*",
+        "phpmd/phpmd" : "*"
+    },
+    "config": {
+        "platform": {
+            "php": "7.2.8"
+        }
+    },
+    "scripts" :{
+        "test": [
+            "./vendor/bin/phpmd src text ./config/phpmd.xml",
+            "./vendor/bin/phpcs --standard=config/phpcs.xml src",
+            "./vendor/bin/phpunit"
+        ]
+    }
+}
