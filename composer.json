@@ -30,9 +30,9 @@
     },
     "scripts" :{
         "test": [
-            "./vendor/bin/phpmd src text ./config/phpmd.xml",
-            "./vendor/bin/phpcs --standard=config/phpcs.xml src",
-            "./vendor/bin/phpunit"
+            "vendor/bin/phpmd src text phpmd.xml",
+            "vendor/bin/phpcs --standard=phpcs.xml src",
+            "vendor/bin/phpunit"
         ]
     }
 }
