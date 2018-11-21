@@ -13,7 +13,7 @@ class Doller
     /**
      * @var int
      */
-    public $amount;
+    public $amount = 10;
 
     /**
      * Doller constructor.
