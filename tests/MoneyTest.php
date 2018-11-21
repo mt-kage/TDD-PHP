@@ -31,9 +31,9 @@ final class MoneyTest extends CommonTestCase
     public function testMultiplication():void
     {
         $five = new Doller(5);
-        $five->times(2);
-        $this->assertEquals(10, $five->amount);
-        $five->times(3);
-        $this->assertEquals(15, $five->amount);
+        $product = $five->times(2);
+        $this->assertEquals(10, $product->amount);
+        $product = $five->times(2);
+        $this->assertEquals(15, $product->amount);
     }
 }
