@@ -33,6 +33,7 @@
             "vendor/bin/phpmd src text phpmd.xml",
             "vendor/bin/phpcs --standard=phpcs.xml src",
             "vendor/bin/phpunit"
-        ]
+        ],
+        "dev": ["vendor/bin/phpunit"]
     }
 }
