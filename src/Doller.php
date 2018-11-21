@@ -21,6 +21,7 @@ final class Doller
      */
     public function __construct(int $amount)
     {
+        $this->amount = $amount;
     }
 
     /**
@@ -28,6 +29,6 @@ final class Doller
      */
     public function times(int $multiplier):void
     {
-        $this->amount = 5 * 2;
+        $this->amount = $this->amount * 2;
     }
 }
