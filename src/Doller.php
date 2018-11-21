@@ -34,11 +34,14 @@ final class Doller
     }
 
     /**
-     * @param $object
+     * @param object $object
      * @return bool
      */
-    public function equals($object)
+    public function equals(object $object):bool
     {
-        return true;
+        // 実際のコードはDollerにキャストしている。
+        // Doller doller = (Doller) object;
+        $doller = $object;
+        return $this->amount == $doller->amount;
     }
 }
