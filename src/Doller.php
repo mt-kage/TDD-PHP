@@ -18,4 +18,10 @@ class Doller
     {
     }
 
+    /**
+     * @param int $multiplier
+     */
+    public function times(int $multiplier):void
+    {
+    }
 }
