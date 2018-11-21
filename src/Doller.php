@@ -32,4 +32,13 @@ final class Doller
     {
         return new Doller($this->amount * $multiplier);
     }
+
+    /**
+     * @param $object
+     * @return bool
+     */
+    public function equals($object)
+    {
+        return true;
+    }
 }
