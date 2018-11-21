@@ -13,7 +13,7 @@ final class Doller
     /**
      * @var int
      */
-    public $amount = 5 * 2;
+    public $amount;
 
     /**
      * Doller constructor.
@@ -28,5 +28,6 @@ final class Doller
      */
     public function times(int $multiplier):void
     {
+        $this->amount = 5 * 2;
     }
 }
