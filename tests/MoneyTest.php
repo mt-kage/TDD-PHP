@@ -33,7 +33,7 @@ final class MoneyTest extends CommonTestCase
         $five = new Doller(5);
         $product = $five->times(2);
         $this->assertEquals(10, $product->amount);
-        $product = $five->times(2);
+        $product = $five->times(3);
         $this->assertEquals(15, $product->amount);
     }
 }
